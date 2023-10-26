@@ -1,0 +1,112 @@
+.topContainer {
+    padding: 20px; /* Having more padding in this container helps keep the borderline below the content remain there in the nav bar */
+    border-style: solid; /* Border makes the nav bar on the top of the page noticable. */
+    border-top: 0; /* By changing the top, left, and right border this makes the border only visable on the bottom. */
+    border-left: 0;
+    border-right: 0;
+    border-color: #d3d6da;
+}
+/*  */
+
+li {
+    display: inline-block; /* The inline block here helps the li tags lay horizontally  */
+    padding: 6px;
+    text-decoration: none; /* Having no text decoration on the li tag will take away the bullet points. */
+}
+
+ul {
+    display: flex; /* Having flex here helps the ul lay horizontally */
+    flex-wrap: nowrap; /* nowrap here helps the content on this line stay in one line without wrapping */
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    left: 44%; /* The left here is to keep the header in the center.  */
+    text-align: center; 
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hamburger {
+    position: absolute; /* Here is where the menu icon is positioned on the top left of the page */
+    left: 0;
+}
+
+.iconBar {
+    position: absolute;
+    right: 0;
+}
+
+.squares { /* This is where the sqaures in the middle of the page is created */
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-color: #d3d6da;
+}
+
+/* All square columns are created in these columns, I placed each square in a column then positioned each column to be beside each other here using position, left, and top.  */
+
+.squareColumn { 
+    margin: 6px;
+    position: absolute;
+    left: 38%;
+    top: 20%;
+    padding: 2px;
+}
+
+.squareColumn1 {
+    margin: 6px;
+    position: absolute;
+    left: 42%;
+    top: 20%;
+    padding: 2px;
+}
+
+.squareColumn2 {
+    margin: 6px;
+    position: absolute;
+    left: 46%;
+    top: 20%;
+    padding: 2px;
+}
+
+.squareColumn3 {
+    margin: 6px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 2px;
+}
+
+.squareColumn4 {
+    margin: 6px;
+    position: absolute;
+    left: 54%;
+    top: 20%;
+    padding: 2px;
+}
+
+.keyboard { /* This is the parent tag for the keyboard, I used the css here to position the keyboard at the bottom center of the page. */
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
+button {
+    height: 40px; /* this is the sizing for the box, the height and width determine how tall and wide the button will be */
+    width: 40px; 
+    background-color: #d3d6da;
+    border-color:#d3d6da;
+    border-radius: 6px; /* Border-radius is used here to make the buttons look more round */
+}
+
+
+.keyboardRow { /* I used a little padding here to add space between each row of keys */
+    padding: 4px;
+} 
+
+.enterBtn { /* This class is to make the enter and backspace button more wide than the other buttons on the page. */
+    width: 60px;
+}
